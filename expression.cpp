@@ -1,3 +1,9 @@
+/**************************
+ * Author: AragakiAyase(Deng Qingyu)
+ * Revise Time: Sat Nov  8 15:23:49 CST 2014 
+ * Email: bitdqy@hotmail.com
+ * description: all of Circuit_Calculator
+ **************************/
 #include <string>  //std::string
 #include <vector>  //std::vector
 #include <stack>   //std::stack
