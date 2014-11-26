@@ -9,17 +9,44 @@
 #include <stack>   //std::stack
 #include <cctype>  //isdigit()
 #include <cstdlib> //stod()
+#include <cmath>   //std::pow
 #include <map>     //std::map
 #include <iostream>
 
 std::string version("1.0.0");
 
-//declaration of operation function
-double plus(double, double);
-double subtract(double, double);
-double multiple(double, double);
-double divide(double, double);
-double parallel(double, double);
+//definition of operation function
+double plus(double lhs, double rhs)
+{
+	return lhs + rhs;
+}
+
+double subtract(double lhs, double rhs)
+{
+	return lhs - rhs;
+}
+
+double multiple(double lhs, double rhs)
+{
+	return lhs*rhs;
+}
+
+double divide(double lhs, double rhs)
+{
+	return lhs / rhs;
+}
+
+double parallel(double lhs, double rhs)
+{
+	return (1 / ((1 / lhs) + (1 / rhs)));
+}
+
+double powoper(double lhs, double rhs)
+{
+	return std::pow(lhs, rhs);
+}
+
+
 
 std::map<char, double(*)(double, double)> oper_map
 {
@@ -27,7 +54,8 @@ std::map<char, double(*)(double, double)> oper_map
 	std::make_pair('-', subtract),
 	std::make_pair('*', multiple),
 	std::make_pair('/', divide),
-	std::make_pair('|', parallel)
+	std::make_pair('|', parallel),
+	std::make_pair('^', powoper)
 };
 
 int comparePiority(const char lhs, const char rhs); // lhs>rhs returns 1, lhs=rhs returns 0, lhs<rhs return -1
@@ -163,30 +191,6 @@ double evalrpn(const std::string &rpn)
 	return stk.top(); 
 }
 
-double plus(double lhs, double rhs)
-{
-	return lhs + rhs;
-}
-
-double subtract(double lhs, double rhs)
-{
-	return lhs - rhs;
-}
-
-double multiple(double lhs, double rhs)
-{
-	return lhs*rhs;
-}
-
-double divide(double lhs, double rhs)
-{
-	return lhs / rhs;
-}
-
-double parallel(double lhs, double rhs)
-{
-	return (1 / ((1 / lhs) + (1 / rhs)));
-}
 
 int main()
 {

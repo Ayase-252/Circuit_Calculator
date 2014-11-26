@@ -20,7 +20,7 @@ It would be very unhappy expirence when it combines comprehensive operation. Hen
 + `lhs*rhs` Multiply
 + `lhs/rhs` Divide
 + `()`      Bracket
-+ [del]`lhs^rhs` pow[/del]
++ `lhs^rhs` pow
 
 ### Operator Specialized for circuit
 

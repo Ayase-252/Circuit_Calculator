@@ -1,28 +1,13 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+#test code on my personal computer
+tst.cpp
 
-# Precompiled Headers
-*.gch
-*.pch
+#visual studio configuration file
+*.vcxproj
+*.filters
+*.sdf
+*.sln
+*.suo
+*.opensdf
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+#object file and executable file
+**/Debug/
