@@ -1,14 +1,7 @@
-/**************************
- * Author: AragakiAyase(Deng Qingyu)
- * Revise Time: Sat Nov  8 15:23:49 CST 2014 
- * Email: bitdqy@hotmail.com
- * description: all of Circuit_Calculator
- **************************/
-
 #include <string>
 #include <iostream>
-#include "Circuit_Calculator\Parser.h"
-#include "Circuit_Calculator\Complex.h"
+#include "Parser.h"
+#include "Complex.h"
 std::wstring version(L"1.0.0");
 
 

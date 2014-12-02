@@ -3,6 +3,7 @@ tst.cpp
 
 #visual studio configuration file
 *.vcxproj
+*.user
 *.filters
 *.sdf
 *.sln
